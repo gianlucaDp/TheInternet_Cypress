@@ -9,4 +9,5 @@ To install Cypress please consult [Install Cypress](https://docs.cypress.io/guid
 
 ## Launch
 To launch the project with GUI use the command `npx cypress open`
+ <br/>
 To launch the project without GUI use the command `npx cypress run`
