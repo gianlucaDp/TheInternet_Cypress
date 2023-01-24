@@ -1,13 +1,11 @@
-export class BasePage{
-    url: string;
+export class BasePage {
+  url: string;
 
-    constructor(url: string){
-        this.url = url;
-    }
+  constructor(url: string) {
+    this.url = url;
+  }
 
-    visit(){
-        return cy.visit(this.url);
-    }
-
-
+  visit(extraParameters = {}) {
+    return cy.visit(this.url, extraParameters);
+  }
 }
