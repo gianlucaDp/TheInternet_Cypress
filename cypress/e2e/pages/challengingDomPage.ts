@@ -75,14 +75,21 @@ export class ChallengingDomPage extends BasePage {
   }
 
   getSecretCode() {
-    this.elements
-      .canvas()
-      .screenshot("code", { overwrite: true })
+    let codePath = Cypress.config("screenshotsFolder") + "/" + "code.png";
+    if (!Cypress.config("isInteractive")) {
+      // cypress run
+      codePath =
+        Cypress.config("screenshotsFolder") +
+        "/" +
+        Cypress.spec.name +
+        "/code.png";
+    }
+
+    this.elements.canvas().screenshot("code", { overwrite: true });
+    cy.readFile(codePath)
+      .should("exist")
       .then(() => {
-        cy.task(
-          "getTextFromImage",
-          Cypress.config("screenshotsFolder") + "/" + "code.png"
-        ).then(($res: string) => {
+        cy.task("getTextFromImage", codePath).then(($res: string) => {
           cy.log($res);
         });
       });
