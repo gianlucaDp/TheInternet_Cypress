@@ -1,6 +1,6 @@
 import { BasePage } from "./basePage";
 
-export class basicAuthpage extends BasePage {
+export class BasicAuthPage extends BasePage {
   constructor() {
     super("https://the-internet.herokuapp.com/basic_auth");
   }

@@ -1,7 +1,7 @@
-import { challengingDomPage } from "./pages/challengingDomPage";
+import { ChallengingDomPage } from "./pages/challengingDomPage";
 
 describe("Tests for Challenging DOM Page", () => {
-  const page = new challengingDomPage();
+  const page = new ChallengingDomPage();
   it("Check being able to get all the elements from the page", () => {
     page.visit();
     page.getSecretCode();

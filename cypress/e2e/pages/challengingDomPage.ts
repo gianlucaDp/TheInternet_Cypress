@@ -1,7 +1,7 @@
 import { BasePage } from "./basePage";
 import { isNumber } from "../../support/utils.js";
 
-export class challengingDomPage extends BasePage {
+export class ChallengingDomPage extends BasePage {
   constructor() {
     super("https://the-internet.herokuapp.com/challenging_dom");
   }

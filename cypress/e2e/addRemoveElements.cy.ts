@@ -1,7 +1,7 @@
-import { addRemoveElementsPage } from "./pages/addRemoveElementsPage";
+import { AddRemoveElementsPage } from "./pages/addRemoveElementsPage";
 
 describe("Tests for the Add Remove Elements Page", () => {
-  const page = new addRemoveElementsPage();
+  const page = new AddRemoveElementsPage();
   it("Add a couple of elements and verify the correct number of elements is present", () => {
     page.visit();
     page.addAnElement();

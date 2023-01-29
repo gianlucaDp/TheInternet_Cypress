@@ -1,6 +1,6 @@
 import { BasePage } from "./basePage";
 
-export class brokenImagesPage extends BasePage {
+export class BrokenImagesPage extends BasePage {
   constructor() {
     super("https://the-internet.herokuapp.com/broken_images");
   }

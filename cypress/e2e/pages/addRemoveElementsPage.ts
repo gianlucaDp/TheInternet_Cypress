@@ -1,6 +1,6 @@
 import { BasePage } from "./basePage";
 
-export class addRemoveElementsPage extends BasePage {
+export class AddRemoveElementsPage extends BasePage {
   constructor() {
     super("https://the-internet.herokuapp.com/add_remove_elements/");
   }
