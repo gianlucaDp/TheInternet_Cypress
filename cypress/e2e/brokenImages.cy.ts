@@ -7,4 +7,9 @@ describe("Tests for Broken Images Page", () => {
     page.getImagesValidity();
     page.checkImageValid(2);
   });
+
+  it("Verify that the default image did not change", () => {
+    page.visit();
+    page.checkImageChange();
+  });
 });

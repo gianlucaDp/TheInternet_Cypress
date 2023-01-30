@@ -75,7 +75,7 @@ export class ChallengingDomPage extends BasePage {
   }
 
   getSecretCode() {
-    let codePath = Cypress.config("screenshotsFolder") + "/" + "code.png";
+    let codePath = Cypress.config("screenshotsFolder") + "/code.png";
     if (!Cypress.config("isInteractive")) {
       // cypress run
       codePath =
