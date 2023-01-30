@@ -1,5 +1,6 @@
-
+package-lock.json
 eng.traineddata
 cypress/e2e/pages/.DS_Store
 *.png
 *.mp4
+node_modules/**

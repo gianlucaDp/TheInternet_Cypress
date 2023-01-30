@@ -1,0 +1,26 @@
+{
+  "name": "theinternet_cypress",
+  "version": "1.0.0",
+  "description": "## Description  E2E web testing exercises with Cypress against the [the-internet.herokuapp](https://the-internet.herokuapp.com/) page.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:spec": "cypress run --spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gianlucaDp/TheInternet_Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gianlucaDp/TheInternet_Cypress/issues"
+  },
+  "homepage": "https://github.com/gianlucaDp/TheInternet_Cypress#readme",
+  "dependencies": {
+    "jimp": "^0.16.2",
+    "tesseract.js": "^4.0.2"
+  }
+}
