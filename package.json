@@ -22,5 +22,8 @@
   "dependencies": {
     "jimp": "^0.16.2",
     "tesseract.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3"
   }
 }
