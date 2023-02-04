@@ -1,5 +1,6 @@
 export class BasePage {
   url: string;
+  elements = {};
 
   constructor(url: string) {
     this.url = url;
