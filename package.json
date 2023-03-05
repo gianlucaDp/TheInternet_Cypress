@@ -24,6 +24,7 @@
     "tesseract.js": "^4.0.2"
   },
   "devDependencies": {
-    "@4tw/cypress-drag-drop": "^2.2.3"
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "cypress-mochawesome-reporter": "^3.3.0"
   }
 }
